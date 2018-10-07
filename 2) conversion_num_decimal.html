@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversion de números decimales</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="scripts/conversion_num_decimal.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<div id="div_color">
+		
+	</div>
+
+	<div id="div_form">
+	<h1>Conversion de números decimales</h1>
+	<form name="form_conversio" id="form_conversio">
+		<div class="form-group">
+			<label>Ingresa número decimal:</label><input type="text" name="txt_decimal" id="txt_decimal" class="form-control">
+			<hr>
+		</div>
+		<div class="form-group">
+			<label>Número en binario:</label><input type="text" name="txt_binario" id="txt_binario" class="form-control" disabled="disabled">
+		</div>
+		<div class="form-group">
+			<label>Número en octal:</label><input type="text" name="txt_octal" id="txt_octal" class="form-control" disabled="disabled">
+		</div>
+		<div class="form-group">
+			<label>Número en hexadecimal:</label><input type="text" name="txt_hexadecimal" id="txt_hexadecimal" class="form-control" disabled="disabled">
+		</div>
+	</form>
+		<button name="btnConvertir" id="btnConvertir" onclick="solicitarNumeroDecimal();" class="btn btn-primary mb-2">CONVERTIR</button>
+	</div>
+</body>
+</html>

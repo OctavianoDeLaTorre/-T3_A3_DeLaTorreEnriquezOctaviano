@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generador de CURP</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+	<script type="text/javascript" src="scripts/generar_curp.js"></script>
+
+</head>
+<body>
+	<div id="div_color">
+		
+	</div>
+	<div id="div_form">
+		<h1>Generador de CURP</h1>
+		<form>
+		<div class="form-group">
+			<input type="text" name="txt_nombre" id="txt_nombre" class="form-control" placeholder = "Ingresa nombre" required>
+		</div>
+		<div class="form-group">
+			<input type="text" name="txt_p_ap" id="txt_p_ap" class="form-control" placeholder = "Ingresa primer apellido" required>
+		</div>
+		<div class="form-group">
+			<input type="text" name="txt_s_ap" id="txt_s_ap" class="form-control" placeholder = "Ingresa segundo apellido" required>
+		</div>
+		<div class="form-group">
+			<input type="radio" name="rb_sexo" id="rb_h" >
+		 	 <label class="form-check-label" for="rb_h">Hombre</label>
+		 	 <input type="radio" name="rb_sexo" id="rb_m" required>
+		 	 <label class="form-check-label" for="rb_m">Mujer</label>
+		</div>
+		<div class="form-group">
+			<label for="fecha_nacimiento">Fecha nacimiento:</label>
+			<input type="date" name="fecha_nacimiento" id="fecha_nacimiento" step="1" min="1900-01-01" max="2100-12-31" id="fecha_nacimiento" value="2018-10-09">
+
+		</div>
+		<div class="form-group">
+			<label>Estado origen:</label>
+			<select class="form-control" name="cb_estados" id="cb_estados">
+			   <option>AGUASCALIENTES </option>
+                <option>BAJA CALIFORNIA NTE. </option>
+                <option>BAJA CALIFORNIA SUR </option>
+                <option>CAMPECHE </option>
+                <option>COAHUILA </option>
+                <option>COLIMA </option>
+                <option>CHIAPAS </option>
+                <option>CHIHUAHUA </option>
+                <option>DISTRITO FEDERAL </option>
+                <option>DURANGO </option>
+                <option>GUANAJUATO </option>
+                <option>GUERRERO </option>
+                <option>HIDALGO </option>
+                <option>JALISCO </option>
+                <option>MEXICO </option>
+                <option>MICHOACAN </option>
+                <option>MORELOS </option>
+                <option>NAYARIT </option>
+                <option>NUEVO LEON </option>
+                <option>OAXACA </option>
+                <option>PUEBLA </option>
+                <option>QUERETARO </option>
+                <option>QUINTANA ROO </option>
+                <option>SAN LUIS POTOSI </option>
+                <option>SINALOA </option>
+                <option>SONORA </option>
+                <option>TABASCO </option>
+                <option>TAMAULIPAS </option>
+                <option>TLAXCALA </option>
+                <option>VERACRUZ </option>
+                <option>YUCATAN </option>
+                <option>ZACATECAS </option>
+                <option>SERV. EXTERIOR MEXICANO </option>
+                <option>NACIDO EN EL EXTRANJERO </option>
+			</select>
+
+		</div>
+		<div class="form-group">
+			<button type="submit" onclick="generarCURP ();" class="btn btn-primary mb-2" id="btn_generar">GENERAR CURP</button>
+		</div>
+		</form>
+	</div>
+</body>
+</html>
